@@ -1,0 +1,51 @@
+#占位符替换内容:%d整数  %f浮点  %s字符串  %x十六进制整数 %%
+#format{}
+'Age: %s. Gender: %s' % (25, True)
+'Age: 25. Gender: True'
+
+#小明的成绩从去年的72分提升到了今年的85分，请计算小明成绩提升的百分点，并用字符串格式化显示出'xx.x%'，只保留小数点后1位：
+s1=72
+s2=85
+r=((s2-s1)/s1)*100
+print('小明成绩提升了:%.1f%%' % r)
+s1=72
+s2=85
+r=((s2-s1)/s1)*100
+print(f'小明成绩提升了:{r:.1f}%')
+
+# 打印Apple:
+# 打印Python:
+# 打印Lisa:
+L = [
+    ['Apple', 'Google', 'Microsoft'],
+    ['Java', 'Python', 'Ruby', 'PHP'],
+    ['Adam', 'Bart', 'Lisa']
+]
+L[0][0]
+L[1][1]
+L[2][2]
+
+#小明身高1.75，体重80.5kg。请根据BMI公式（体重除以身高的平方）帮小明计算他的BMI指数，并根据BMI指数：
+#低于18.5：过轻
+#18.5-25：正常
+#25-28：过重
+#28-32：肥胖
+#高于32：严重肥胖
+height = 1.75
+weight = 80.5
+BMI = weight/height**2
+if BMI>32:
+    print=('严重肥胖')
+elif BMI>=28:
+    print=('肥胖')
+elif BMI>=25:
+    print=('过重')
+elif BMI>=18.5:
+    print=('正常')
+else:
+    print=('过轻')
+
+#请利用循环依次对list中的每个名字打印出Hello, xxx!：
+L = ['Bart','Lisa','Adam']
+for X in L:
+    print (f'hello,{X}!')
